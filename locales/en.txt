@@ -1,0 +1,68 @@
+# Empty lines and lines starting with '#' are ignored. Whitespace is NOT stripped.
+# Line before '=' should not be translated and all '{}' should be left alone.
+hello_world=Hello, World
+
+# Errors/Warnings
+invalid_trans=Could not retrieve translation '{}'. No '=' found.
+invalid_arg=Invalid first argument. See '-h' for a list of arguments.
+expected_args_equal=Expected {} argument(s), got {} instead.
+expected_args_bigger_or_equal=Expected at least {} argument(s), got {} instead.
+could_not_create_file=File '{}' could not be created.
+could_not_create_dir=Directory '{}' could not be created.
+could_not_delete=File/Directory '{}' could not be deleted.
+unsupported_template=Unrecognized template '{}'. See '-i' for list of templates.
+unsupported_file=Warning: unsupported template for file '{}'.
+
+# Log
+creating_file=Creating file '{}'...
+created_file=Created file '{}'.
+creating_dir=Creating directory '{}'...
+created_dir=Created directory '{}'.
+deleting=Deleting file/directory '{}'...
+deleted=Deleted file/directory '{}'.
+wrote_file=Wrote {} characters to file '{}'.
+made_executable=Made '{}' executable.
+writing_file=Writing to file '{}'... Enter ':d' to discard or ':q' to save & quit.
+write_discarded=Discarded. File '{}' not created.
+creating_template=Creating template '{}'...
+created_template=Created template '{}'.
+
+# Input (must end with one whitespace!)
+input_project_name=Input project's name: 
+input_executable_name=Input executable's name: 
+input_standard=Input standard: 
+main_cpp_args=No args [enter] or args [any]?: 
+project_complexity=Multi-file [enter] or one-file [any] project?: 
+replace_file=File '{}' already exists, replace it [any] or skip [enter]?: 
+input_include=Could not find a folder 'include'. Please input it manually: 
+use_clangd_or_cmake=Use '.clangd' + 'build.sh' [enter] or 'CMakeLists.txt' [any]?: 
+
+# Help
+help_h=-h  Show arguments list.
+help_v=-v  Show version.
+help_i=-i  Show advanced help.
+help_t=-t  Initialize a project with a template.
+help_f=-f  Create a file from a template.
+help_d=-d  Create a directory.
+help_r=-r  Remove files/directories.
+help_c=-c  Create a .cpp and .hpp file pair.
+help_w=-w  Create and write to a file.
+
+# Version
+version=CLI file template tool FILET version {}.
+version_owner=Made with C++ by chalcinxx.
+
+# Info
+info_usage=Usage:
+info_filet=filet [arguments]
+info_arguments=Arguments:
+info_examples=Examples:
+info_templates=Templates:
+info_files=Files:
+info_locales=Locales:
+info_locale_en=US English
+info_locale_lv=Latvian
+info_example1=filet -t repl          Use the REPL template.
+info_example2=filet -f src/main.cpp  Create a new file.
+info_example3=filet -d build lib     Create two folders.
+info_example4=filet -lv -c class     Create a class.cpp and class.hpp file in Latvian locale.

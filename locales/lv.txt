@@ -1,0 +1,68 @@
+# Tukšās rindiņas un rindiņas, kas sākas ar '#', tiek ignorētas. Atstarpes NETIEK noņemtas.
+# Tekstu pirms '=' nedrīkst tulkot un nevienu '{}' nedrīkst aiztikt.
+hello_world=Sveika, Pasaule
+
+# Kļūmes/Brīdinājumi
+invalid_trans=Nevarēja dabūt tulkojumu '{}'. '=' netika atrasta.
+invalid_arg=Nezināms pirmais arguments. Skatiet '-h' priekš argumentu saraksta.
+expected_args_equal=Tika paredzēti {} arguments/i, tā vietā dabūja {}.
+expected_args_bigger_or_equal=Tika paredzēti vismaz {} arguments/i, tā vietā dabūja {}.
+could_not_create_file=Nevarēja izveiodot failu '{}'.
+could_not_create_dir=Nevarēja izveidot mapi '{}'.
+could_not_delete=Nevarēja izdzēst failu/mapi '{}'.
+unsupported_template=Nezināma veidne '{}'. Skatiet '-i' priekš veidņu saraksta.
+unsupported_file=Brīdinājums: nezināma veidne failam '{}'.
+
+# Reģistrēšana
+creating_file=Rada failu '{}'...
+created_file=Radīja failu '{}'.
+creating_dir= 'Rada mapi {}'...
+created_dir=Radīja mapi '{}'.
+deleting=Dzēš failu/mapi '{}'...
+deleted=Izdzēsa failu/mapi '{}'.
+wrote_file=Ierakstīja {} rakstzīmes failā '{}'.
+made_executable=Padarīja failu '{}' par izpildāmu.
+writing_file=Raksta failā '{}'... Ieraksti ':d', lai atceltu, vai ':q', lai saglabātu un beigtu.
+write_discarded=Atcelts. Fails '{}' netika radīts.
+creating_template=Rada veidni '{}'...
+created_template=Radīja veidni '{}'.
+
+# Ievade (obligāti jābeidzas ar atstarpi!)
+input_project_name=Ievadi projekta nosaukumu: 
+input_executable_name=Ievadi izpildāmā faila nosaukumu: 
+input_standard=Ievadi standartu: 
+main_cpp_args=Bez argumentiem [enter] vai ar argumentiem [jebkurš]?: 
+project_complexity=Vairāku failu [enter] vai viena faila [jebkurš] projekts?: 
+replace_file=Fails '{}' jau eksistē, aizstāt [jebkurš] vai izlaist [enter]?: 
+input_include=Nevarēja atrast mapi 'include'. Lūdzu, ievadiet mapes nosaukumu manuāli: 
+use_clangd_or_cmake=Izmantot '.clangd' + 'build.sh' [enter] vai 'CMakeLists.txt' [jebkurš]?: 
+
+# Help
+help_h=-h  Parādīt argumentu sarakstu.
+help_v=-v  Parādīt versiju.
+help_i=-i  Parādīt dziļāku palīdzību.
+help_t=-t  Radīt projektu ar viedni.
+help_f=-f  Radīt failu ar viedni.
+help_d=-d  Radīt mapi.
+help_r=-r  Izdzēst failu/mapi.
+help_c=-c  Radīt .cpp un .hpp failu pāri.
+help_w=-w  Radīt un rakstīt failā.
+
+# Version
+version=Komandrindas saskarnes failu viedņu rīks FILET versija {}.
+version_owner=Taisīja chalcinxx ar C++.
+
+# Info
+info_usage=Izmantošana:
+info_filet=filet [argumenti]
+info_arguments=Argumenti:
+info_examples=Piemēri:
+info_templates=Viednes:
+info_files=Faili:
+info_locales=Lokalizācijas:
+info_locale_en=Amerikāņu Angļu
+info_locale_lv=Latviešu
+info_example1=filet -t repl          Izmantot REPL viedni.
+info_example2=filet -f src/main.cpp  Radīt jaunu failu.
+info_example3=filet -d build lib     Radīt jaunas mapes.
+info_example4=filet -lv -c class     Radīt class.cpp un class.hpp failus latviešu lokalizācijā.
