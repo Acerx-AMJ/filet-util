@@ -288,8 +288,7 @@ void user_write_file(const Path& path)
 
    while (true)
    {
-      // Ugly, but works until line 9999, why would anyone ever write a file longer than that in a CLI tool? <- Never assume what users might or might not do
-      std::cout << std::string((line < 9 ? 3 : (line < 99 ? 2 : (line < 999 ? 1 : 0))), ' ') << ++line << " ";
+      printf("%-3zu ", ++line);
       std::string temp;
       std::getline(std::cin, temp);
 

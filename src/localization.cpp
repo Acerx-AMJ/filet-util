@@ -1,8 +1,5 @@
 #include "localization.hpp"
 
-#include <pwd.h>
-#include <unistd.h>
-#include <filesystem>
 #include <fstream>
 #include <iostream>
 #include <unordered_map>
@@ -20,15 +17,11 @@ bool is_valid_locale(const std::string& locale)
 
 void load_translations(const std::string& locale)
 {
-   const char* homedir = getenv("HOME");
-   if (!homedir)
-      homedir = getpwuid(getuid())->pw_dir;
-
-   std::fstream file (std::filesystem::path(homedir) / (".local/share/filet/locales/"s + locale.substr(1, locale.size() - 1) + ".txt"s));
+   std::fstream file ("locales/"s + locale.substr(1, locale.size() - 1) + ".txt"s);
 
    if (!file.is_open())
    {
-      file.open(std::filesystem::path(homedir) / (".local/share/filet/locales/es.txt"s));
+      file.open("locales/en.txt"s);
 
       if (!file.is_open())
       {

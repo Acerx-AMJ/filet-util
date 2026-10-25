@@ -50,7 +50,7 @@ help_w=-w  Radīt un rakstīt failā.
 
 # Version
 version=Komandrindas saskarnes failu viedņu rīks FILET versija {}.
-version_owner=Taisīja chalcinxx ar C++.
+version_owner=Izveidoja Daniels Višņevskis ar C++.
 
 # Info
 info_usage=Izmantošana:

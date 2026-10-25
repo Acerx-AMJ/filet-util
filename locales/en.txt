@@ -50,7 +50,7 @@ help_w=-w  Create and write to a file.
 
 # Version
 version=CLI file template tool FILET version {}.
-version_owner=Made with C++ by chalcinxx.
+version_owner=Made with C++ by Daniel Vishnevsky.
 
 # Info
 info_usage=Usage:
